@@ -1,0 +1,38 @@
+.header {
+    width: 75%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+}
+
+.text-seacrh {
+    margin-top: 10px;
+    width: 40%;
+    border: 3px solid #0b7513;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.text-seacrh:focus {
+    color: #011c00;
+}
+
+.btn-search {
+    margin-top: 10px;
+    margin-right: 10%;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #0b7513;
+    background: #0b7513;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+

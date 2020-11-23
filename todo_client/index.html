@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./assets/favicon.ico">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/solid.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="input-login" placeholder="Username" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password-login" placeholder="Password" />
+                    </div>
+                    <div id="error-login" class="error-message hidden" >
+                        <p>Username or password incorrect</p>   
+                    </div>
+                    <input type="submit" value="Login" class="btn solid" />
+                </form>
+                <form action="#" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name-register" placeholder="Full name" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="user-register" placeholder="Username" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email-register" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password-register" placeholder="Password" />
+                    </div>
+                    <div id="error-register" class="error-message hidden" >
+                        <p>There was an error creating the user, try again later</p>   
+                    </div>
+                    <div id="success-register" class="success-message hidden" >
+                        <p>User created successfully</p>   
+                    </div>
+                    <input type="submit" class="btn" value="Sign up" />
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New here ?</h3>
+                    <p>
+                        First of all you must register, but don't worry
+                        we won't ask you for much personal information
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn">
+                        Sign up
+                    </button>
+                </div>
+                <img src="assets/tasks.svg" class="image" alt="" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of us ?</h3>
+                    <p>
+                        If you are already registered, just login with your username and password, 
+                        so you can start adding new taks to do. 
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">
+                        Sign in
+                    </button>
+                </div>
+                <img src="assets/user.svg" class="image image-right" alt="" />
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./src/contoller/mainController.js"></script>
+</body>
+
+</html>

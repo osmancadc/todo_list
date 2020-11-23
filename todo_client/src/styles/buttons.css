@@ -1,0 +1,69 @@
+.btn-alert {
+    background-color: #f0ad4e;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+}
+
+.btn-completed {
+    background-color: #0275d8;
+}
+
+.btn-incompleted {
+    background-color: #13c8b6;
+}
+
+.btn-alert:hover {
+    background-color: #f0d84f;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #f35134;
+    cursor: pointer;
+}
+
+.btn-completed:hover {
+    background-color: #4ba9fe;
+    cursor: pointer;
+}
+
+.btn-incompleted:hover {
+    background-color: #69f1e3;
+    cursor: pointer;
+}
+
+.btn-new {
+    background-color: #1dde26;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0 solid white;
+}
+
+.btn-new:hover {
+    cursor: pointer;
+    background-color: #16ab1e;
+}
+
+
+.btn .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+}
+
+.btn:hover .tooltiptext {
+    visibility: visible;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>User's to do list</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/solid.css">
+    <link rel="stylesheet" href="./src/styles/taskStyle.css">
+</head>
+
+<body>
+    <div class="header">
+        <input type="text" class="text-seacrh" placeholder="Type description to search tasks">
+        <button onclick="searchTask(this)" class="btn btn-search">
+            <i class="fa fa-search"></i>
+            <span class="tooltiptext">Search</span>          
+        </button>
+        <button class="btn btn-new" onclick="newTask()"><i class="fas fa-plus"></i>
+            <span class="tooltiptext">New task</span>
+        </button>
+    </div>
+    <div class="container">
+
+    </div>
+    <div class="pagination"></div>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./src/bin/pagination.js"></script>
+    <script src="./src/contoller/taskController.js"></script>
+</body>
+
+</html>

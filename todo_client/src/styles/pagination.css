@@ -1,0 +1,36 @@
+.paginationjs-pages{
+    width: 50%;
+    margin:30px auto 0 auto;
+    text-align: center;
+}
+.paginationjs-pages ul {
+    display: inline-block;
+    list-style-type: none;
+    background-color: #bdf2be;
+}
+
+.paginationjs-pages ul li {
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.paginationjs-pages ul .active {
+    background-color: #27d32c;
+    color: white;
+}
+
+.paginationjs-pages ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.paginationjs-pages ul li:hover:not(.active) {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.paginationjs-pages ul .disabled {
+    color: gainsboro;
+    cursor: none;
+}
